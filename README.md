@@ -37,7 +37,9 @@ Caso deseje executar o website do Luke's Coffee em sua própria máquina localme
 - Valderlêndia Macêdo [@Valderlandia-Macedo](https://github.com/Valderlandia-Macedo)
 - Athirson Rodrigues [@Athirson-Rodrigues](https://github.com/)
 
-Agradecemos a todos os nossos contribuidores por ajudarem a tornar o Luke's Coffee ainda melhor!
+ [Documentos de Requisitos](https://docs.google.com/document/d/1NHXRjrrOiGsjO_9SJc5CHK38SRb-bYaPy_LuBtFyDt8/edit?usp=sharing)
+
+
 
 ## Licença
 
