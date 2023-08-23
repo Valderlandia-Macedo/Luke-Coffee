@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Coffee</title>
+    <!-- Link TO CSS -->
+    <link rel="stylesheet" href="{% static 'css/cadastroo.css' %}">
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    {% include "./partials/headerpainel.html" %}
+
+    <div class="cadastro-container">
+        <form class="form-control" action="{% url 'pedidoform' %}" method="POST">
+            {% csrf_token %}
+            <h2>Faça seu pedido</h2>
+            <input name="descricao" class="form-control" type="text" placeholder="Descrição do pedido">
+            <select name="produto_id">
+                <option value="">Selecione o produto</option>
+                {% for produto in produtos %}
+                <option value="{{produto.id}}">{{produto.name}} - R${{produto.value}}</option>
+                {% endfor %}
+            </select>
+            <input name="endereco" type="text" placeholder="Endereço">
+            <input name="observacao" type="text" placeholder="Observação">
+            <button type="submit">Fazer pedido</button>
+        </form>
+    </div>
+
+    <!--Footer-->
+    {% include "./partials/footer.html" %}
+    <!-- Link To JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

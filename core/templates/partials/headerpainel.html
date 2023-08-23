@@ -1,0 +1,12 @@
+{% load static %}
+
+<header>
+    <a href="#" class="logo">
+        <img src="{% static 'img/logo.png' %}" alt="">
+    </a>
+    <!-- Links -->
+    <ul class="navbar">
+        <li><a href="{% url 'painel' %}">Pedidos</a></li>
+        <li><a href="{% url 'logout' %}">Sair</a></li>
+    </ul>
+</header>

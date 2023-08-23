@@ -1,0 +1,72 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Coffee</title>
+    <!-- Link TO CSS -->
+    <link rel="stylesheet" href="{% static 'css/styl.css' %}">
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    {% include "./partials/header.html" %}
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Comece o seu dia com café</h1>
+            <p>Uma cafeteria aconchegante, localizada no coração da cidade</p>
+            <p style="font-size: 25px;"><b>Cadastre-se e faça já o seu pedido!</b></p>
+            <a href="{% url 'painel' %}" class="btn">Compre agora</a>
+        </div>
+        <div class="home-img">
+            <img src="{% static 'img/main.png' %}" alt="">
+        </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="{% static 'img/about.jpg' %}" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Nossa História</h2>
+            <p>Na Luke Coffee, não somos apenas uma cafeteria; somos uma extensão da sua casa.Desde 1995, temos tido o
+                privilégio de servir não apenas café excepcional, mas também momentos de calor humano e aconchego que só
+                uma família verdadeira pode oferecer.</p>
+            <p>Tudo começou com a visão de Luke Henderson, um amante do café e apaixonado por criar espaços que unissem
+                as pessoas. Com um sonho simples em mente - compartilhar o amor pelo café e construir uma comunidade
+                calorosa - Luke fundou a cafeteria que hoje é amada por todos os que buscam uma pausa na correria
+                cotidiana.</p>
+            <a href="#" class="btn">Saiba mais</a>
+        </div>
+
+    </section>
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="heading">
+            <h2>Nossos Produtos</h2>
+        </div>
+        <!-- Container -->
+        <div class="products-container">
+            {% for produto in produtos %}
+            <div class="box">
+                <img src="{{produto.image.url}}" alt="">
+                <h3>{{produto.name}} - <span>R${{produto.value}}</span></h3>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!--Footer-->
+    {% include "./partials/footer.html" %}
+    <!-- Link To JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

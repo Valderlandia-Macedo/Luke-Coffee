@@ -1,0 +1,13 @@
+{% load static %}
+
+<header>
+    <a href="#" class="logo">
+        <img src="{% static 'img/logo.png' %}" alt="">
+    </a>
+    <!-- Links -->
+    <ul class="navbar">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'cadastro' %}">Cadastre-se</a></li>
+        <li><a href="{% url 'login' %}">Entrar</a></li>
+    </ul>
+</header>
