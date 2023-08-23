@@ -13,24 +13,12 @@ Nosso website foi desenvolvido para oferecer uma experiência agradável aos nos
 
 - **Sobre**: Conheça a história por trás do Luke's Coffee e saiba mais sobre nossa equipe apaixonada pelo café.
 - **Cardápio**: Explore nossas opções de café, desde os clássicos expressos e cappuccinos até as criações exclusivas do nosso barista.
-- **Eventos**: Fique por dentro dos eventos especiais que organizamos, como degustações de café, workshops e apresentações musicais ao vivo.
 - **Localização**: Encontre facilmente o endereço da nossa cafeteria, juntamente com um mapa interativo para ajudá-lo a nos visitar.
-- **Faça seu pedido**: Aproveite a conveniência de fazer pedidos online para entrega ou retirada na loja.
+- **Faça seu pedido**: Aproveite a conveniência de fazer pedidos online para entrega.
 
 ## Como contribuir
 
 Se você encontrar algum problema ou tiver alguma sugestão para melhorar nosso website, sinta-se à vontade para abrir uma issue neste repositório. Adoramos receber feedback dos nossos clientes e estamos sempre em busca de aprimoramentos.
-
-## Como executar localmente
-
-Caso deseje executar o website do Luke's Coffee em sua própria máquina localmente, siga as instruções abaixo:
-
-1. Certifique-se de ter o Node.js instalado em seu computador.
-2. Clone este repositório usando o comando `git clone https://github.com/cafe-aroma/website.git`.
-3. Acesse o diretório do projeto: `cd website`.
-4. Instale as dependências do projeto executando `npm install`.
-5. Inicie o servidor local usando `npm start`.
-6. Abra o seu navegador e acesse `http://localhost:3000` para visualizar o website.
 
 ## Contribuidores
 
